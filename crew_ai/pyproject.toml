@@ -1,0 +1,24 @@
+[project]
+name = "crew_ai"
+version = "0.1.0"
+description = "crew_ai using crewAI"
+authors = [{ name = "mahesh", email = "maheshshali10@gmail.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.100.0,<1.0.0",
+    "pyodbc>=4.0.39"
+]
+
+[project.scripts]
+crew_ai = "crew_ai.main:run"
+run_crew = "crew_ai.main:run"
+train = "crew_ai.main:train"
+replay = "crew_ai.main:replay"
+test = "crew_ai.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

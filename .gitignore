@@ -1,0 +1,13 @@
+.vscode/
+.github/
+obj/
+bin/
+.env
+/publish
+crew_ai/venv
+crew_ai/.venv
+crew_ai/src/crew_ai/__pycache__
+fastapi_service/__pycache__
+fastapi_service/venv
+fastapi_service/.env
+fastapi_service/main.py
